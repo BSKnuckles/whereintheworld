@@ -57,7 +57,7 @@ export default function Detail() {
 
   if (!data.loading) {
     return (
-      <div className='grid grid-cols-2 gap-12'>
+      <div className='grid md:grid-cols-2 gap-12'>
         <img src={data.country.flags[0]} alt={`${data.country.name}'s flag`} />
         <div className='flex flex-col gap-6 mt-6'>
           <h1 className='text-3xl font-extra-bold text-light-text dark:text-dark-text'>{data.country.name}</h1>
@@ -80,7 +80,7 @@ export default function Detail() {
               <dt className='inline font-extra-bold text-light-text dark:text-dark-text'>Capital:</dt>
               <dd className='inline ml-2 text-light-text dark:text-dark-text'>{data.country.capital}</dd>
             </dl>
-            <dl className='text-sm'>
+            <dl className='text-sm mt-6 md:mt-0'>
               <dt className='inline font-extra-bold text-light-text dark:text-dark-text'>Top Level Domain:</dt>
               <dd className='inline ml-2 text-light-text dark:text-dark-text'>{data.country.topLevelDomain}</dd>
               <br />
@@ -98,7 +98,7 @@ export default function Detail() {
             </dl>
           </div>
           <nav className='flex flex-wrap items-center gap-2'>
-            <h3 className='text-light-text dark:text-dark-text font-extra-bold text-sm min-w-48 mr-2'>
+            <h3 className='text-light-text dark:text-dark-text font-extra-bold text-sm min-w-48 mr-2 w-full md:w-auto'>
               Border Countries:
             </h3>
             {data.borders.length > 0 ? (
