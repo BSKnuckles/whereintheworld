@@ -57,7 +57,7 @@ export default function Detail() {
 
   if (!data.loading) {
     return (
-      <div className='grid md:grid-cols-2 gap-12'>
+      <div className='grid md:grid-cols-2 gap-x-12'>
         <img src={data.country.flags[0]} alt={`${data.country.name}'s flag`} />
         <div className='flex flex-col gap-6 mt-6'>
           <h1 className='text-3xl font-extra-bold text-light-text dark:text-dark-text'>{data.country.name}</h1>
