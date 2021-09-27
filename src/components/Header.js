@@ -15,12 +15,12 @@ export default class Header extends React.Component {
           {this.props.theme === 'dark' ? (
             <>
               <MoonIcon className='h-6 w-6 color-light-text mr-2' />
-              <p>Dark Mode</p>
+              Dark Mode
             </>
           ) : (
             <>
               <SunIcon className='h-6 w-6 color-dark-text mr-2' />
-              <p>Light Mode</p>
+              Light Mode
             </>
           )}
         </button>

@@ -26,6 +26,7 @@ export default class Filter extends React.Component {
             </label>
           </div>
           <select
+            name='region'
             onChange={e => this.props.filter(e.target.value)}
             className='bg-light-elements dark:bg-dark-elements text-light-text dark:text-dark-text px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-0'>
             <option value='all'>All</option>
