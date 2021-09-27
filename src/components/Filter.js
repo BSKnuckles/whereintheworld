@@ -25,6 +25,9 @@ export default class Filter extends React.Component {
               />
             </label>
           </div>
+          <label htmlFor='region' className='sr-only'>
+            Choose Region Filter
+          </label>
           <select
             name='region'
             onChange={e => this.props.filter(e.target.value)}
